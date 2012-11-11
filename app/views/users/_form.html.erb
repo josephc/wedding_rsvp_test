@@ -13,19 +13,19 @@
 
   <div class="field">
     <%= f.label :name, "Name" %><br />
-    <%= f.text_field :name %>
+    <%= f.text_field :name %><br /><br />
   </div>
   <div class="field">
     <%= f.label :attending, "Will you be attending the wedding?" %><br />
     <%= f.radio_button :attending, true %>
     <%= f.label :attending, "Yes", :value => true %><br />
     <%= f.radio_button :attending, false %>
-    <%= f.label :attending, "No", :value => false %>
+    <%= f.label :attending, "No", :value => false %><br /><br />
   </div>
   <div class="field">
-    If, yes<br />
+    If yes,<br /><br />
     <%= f.label :address, "Mailing Address:" %><br />
-    <%= f.text_area :address, :cols => 20, :rows => 3  %>
+    <%= f.text_area :address, :cols => 20, :rows => 3  %><br /><br />
   </div>
   <div class="field">
     <%= f.label :nights, "Which nights will you be staying at the hostel?" %><br />
@@ -34,11 +34,11 @@
     <%= f.radio_button :nights, 1 %> 
     <%= f.label :nights, "Saturday, 6/29", :value => 1 %> <br />
     <%= f.radio_button :nights, 2 %>
-    <%= f.label :nights, "Both!", :value => 2 %>
+    <%= f.label :nights, "Both!", :value => 2 %><br /><br />
   </div>
   <div class="field">
     <%= f.label :comments, "Any questions or comments?" %><br />
-    <%= f.text_area :comments, :cols => 20, :rows => 3%>
+    <%= f.text_area :comments, :cols => 20, :rows => 3%><br />
   </div>
   <div class="actions">
     <%= f.submit %>
