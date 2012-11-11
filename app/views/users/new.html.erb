@@ -1,5 +1,23 @@
-<h1>New user</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Back', users_path %>
+<% provide(:title, 'Tandra and Joseph | FOREVER') %>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Joseph and Tandra | <%= yield(:title) %></title>
+</head>
+<body>
+  <div id="main_container">
+    <div id="pics">
+      <img src="/images/lighthouse.jpeg" />
+      <div id="banner_text">
+        <h1>Tandra and Joseph are getting married!!</h1>
+      </div>
+      <div id="details">
+        <p>June 29th, 2013 in the <a href="http://www.parksconservancy.org/visit/park-sites/marin-headlands.html" target="_blank">Marin Headlands</a></p>
+      </div>
+      <div id="form_inputs">
+        <%= render 'form' %>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

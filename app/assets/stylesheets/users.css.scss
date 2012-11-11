@@ -1,3 +1,50 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+/*	background-image:url('lighthouse.jpeg');
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:1200px 1000px;
+	background-position: center center;*/
+	background-color:#183344;
+	color:white;
+	font-family: fantasy, Times New Roman, arial, sans-serif;
+}
+
+#main_container {
+	position: relative;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main_container img {
+	width: 1200px;
+}
+
+#pics {
+	position: relative;
+}
+
+#banner_text {
+	position: absolute;
+	top: 65px;
+	right: 40px;
+}
+
+#form_inputs {
+	position: absolute;
+	top: 150px;
+	right: 1px;
+}
+
+#details {
+	position: absolute;
+	top: 110px;
+	right: 360px;
+}
+
+#details a {
+	color:#183344;
+}
