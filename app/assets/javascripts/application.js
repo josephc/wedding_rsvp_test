@@ -13,3 +13,25 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+// this is the div to hide
+var div = document.getElementById('the_mine');
+
+//hide the div - this should be done in CSS
+div.style.display = "none";
+
+//get value of the text field
+var tolken =document.getElementById("moria").value;
+
+// evaluate submission
+function moria() {
+var tolken =document.getElementById("moria").value;
+if (tolken == "mellon")
+	  {
+	  div.style.display = "block";
+	  }
+	else 
+	  {
+		div.style.display = "none";
+	  }
+}
